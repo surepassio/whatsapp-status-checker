@@ -3,7 +3,7 @@ from number_checker import check
 # from status_checker import check
 
 gc = gspread.service_account(filename="./service_account.json")
-sh = gc.open_by_url('URL')
+sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1CxtFFm1rcSUfsujarx3tXYAz7K11jLnwllj6FCrzDDw/edit#gid=1742163449')
 worksheet = sh.get_worksheet(1)
 
 numbers = worksheet.col_values(3)
