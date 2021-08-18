@@ -1,0 +1,3 @@
+*.json
+checker/
+__pycache__/
